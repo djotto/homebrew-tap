@@ -7,8 +7,7 @@ class GitInfo < Formula
   license "MIT"
 
   def install
-    system "make"
-    # Install the binary
+    # Install the script
     bin.install "git-info"
   end
 
