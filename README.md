@@ -2,13 +2,15 @@
 
 My personal homebrew formulae, for published tools that don't have their own official formulae or for my own personal tools. Building my own brew formulae simplifies [my chezmoi scripts](https://github.com/djotto/dotfiles).
 
-Only tested on Intel macs. If you try to install it on Apple silicon and it fails, please raise a bug. Fixes for Apple silicon, or fixes in general, are welcome.
+Only tested on Intel macs. If you try to use on Apple silicon and it fails, please raise a bug. Fixes for Apple silicon, or fixes in general, are welcome.
 
 ## Contents
 
 * [bucklespring](https://github.com/zevv/bucklespring) Nostalgia bucklespring keyboard sound, installs as a brew service.
 * [max](https://github.com/sbooth/Max) Create high-quality audio files in various formats, from CDs or files.
 * [mp3guessenc](https://mp3guessenc.sourceforge.io/) Analysze audio mpeg files and detect the encoder used (when layer III)
+* [git-info](https://github.com/djotto/scripts/blob/master/git-info/git-info) Information about a repo in human-readable form
+* [git-seek](https://github.com/djotto/scripts/blob/master/git-seek/git-seek) Checkout branches based on partial names
 
 ## Bucklespring usage
 
@@ -38,3 +40,21 @@ brew install bucklespring
 ```
 
 Some complaints about switches when running the Makefile, but no showstoppers.
+
+## Git-info usage
+
+```bash
+brew tap djotto/tap
+brew install git-info
+```
+
+Git is a prerequisite, but the formula doesn't check for it.
+
+## Git-seek usage
+
+```bash
+brew tap djotto/tap
+brew install git-seek
+```
+
+Git and sed are prerequisites, but the formula doesn't check for them.
