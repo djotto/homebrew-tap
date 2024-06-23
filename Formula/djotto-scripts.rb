@@ -1,8 +1,8 @@
 class DjottoScripts < Formula
   desc "A collection of useful scripts"
   homepage "https://github.com/djotto/scripts"
-  url "https://github.com/djotto/scripts/archive/refs/tags/v1.0.3.tar.gz"
-  sha256 "48472a458d1c63a24a49e3009c8fd0c0a83af9d298e84e9ebcafd77a95e6f473"
+  url "https://github.com/djotto/scripts/archive/refs/tags/v1.0.4.tar.gz"
+  sha256 "99af5ca308b424fe4422946e5f0e964816a79268519fa9d75315f830e3819ea3"
   head "https://github.com/djotto/scripts.git", using: :git
 
   def install
