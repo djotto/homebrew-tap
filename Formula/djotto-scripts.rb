@@ -9,6 +9,7 @@ class DjottoScripts < Formula
     # Install the scripts
     bin.install "git-scripts/git-info"
     bin.install "git-scripts/git-seek"
+    bin.install "misc/average-time"
   end
 
   test do
@@ -18,5 +19,8 @@ class DjottoScripts < Formula
     # Run a simple test to verify the installation of git-seek
     output = shell_output("#{bin}/git-seek", 1)
     assert_match "Usage: git seek <pattern>", output
+    # Exercise average-time
+    output = shell_output("#{bin}/average-time", 1)
+    assert_match "Usage: ./average-time <iterations> <command>", output
   end
 end
